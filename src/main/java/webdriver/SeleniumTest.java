@@ -6,10 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumTest {
-
+// Este teste preenche um formulário de cadastro no Facebook.
 	public static void main(String[] args) {
-		//                                                   (   caminho do driver do goolgle chrome  'chromedriver.exe'    )
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\arthu\\git\\selenium-web-driver\\src\\main\\java\\webdriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+			"C:\\Users\\arthu\\git\\selenium-web-driver\\src\\main\\java\\webdriver\\chromedriver.exe");
 
 		try {
 			WebDriver driver = new ChromeDriver();
