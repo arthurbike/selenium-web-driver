@@ -10,10 +10,10 @@ import org.openqa.selenium.WebElement;
 public class Scraping {
 
 	public static void scraping(WebDriver driver) {
-		List<WebElement> listaDeCurso = new ArrayList();
-		listaDeCurso = driver.findElements(By.className("courses-list__card-content"));
-		for (int i = 0; i < listaDeCurso.size(); i++) {
-			System.out.println(listaDeCurso.get(i).getText());
+		List<WebElement> listaDeCursos = new ArrayList();
+		listaDeCursos = driver.findElements(By.className("courses-list__card-content"));
+		for (WebElement curso : listaDeCursos) {
+			System.out.println(curso.getText());
 		}
 	}
 
