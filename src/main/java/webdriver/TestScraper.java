@@ -12,7 +12,7 @@ public class TestScraper {
 
 	public static void main(String[] args) {
 
-		/* Esse teste procura o nome de cursos em uma p�gina e escreve no console. */
+		/* Esse teste procura o nome de cursos em uma página e escreve no console. */
 
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\arthu\\git\\selenium-web-driver\\src\\main\\java\\webdriver\\chromedriver.exe");
@@ -21,7 +21,7 @@ public class TestScraper {
 		driver.get("https://querobolsa.com.br/cursos-e-faculdades");
 
 		WebElement next = driver
-				.findElement(By.xpath("//*[@id=\"__layout\"]/div/div[2]/div/div[5]/div[4]/div[2]/div/button[2]"));
+				.findElement(By.xpath("//button[@aria-label=\"Próximo\"]"));
 
 		while (next.isEnabled()) {
 			Scraping.scraping(driver);
